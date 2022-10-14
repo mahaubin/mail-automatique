@@ -8,8 +8,8 @@ module.exports.sent = async function () {
   const transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
-      user: 'mahaubin@gmail.com',
-      pass: 'elgipfceayrowjrp',
+      user: 'your email adress',
+      pass: 'your password',
     },
   });
 
@@ -23,9 +23,9 @@ module.exports.sent = async function () {
   });
 
   const mailOption = {
-    from: 'mahaubin@gmail.com',
-    to: 'zeihnswitch@gmail.com',
-    subject: 'teste de mail',
+    from: 'your email adress',
+    to: ' adress mail du personne',
+    subject: 'objet',
     // text: 'ok',
     html: templateRendered,
   };
